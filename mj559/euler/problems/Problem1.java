@@ -12,20 +12,18 @@ import mj559.euler.util.Timer;
  */
 
 public class Problem1 implements Problem {
-
-	Timer t = new Timer();
 	
 	@Override
 	public void solve() {
 		
-		t.start();
+		Timer.start();
 		int total = 0;
 		for(int i = 0; i < 1000; i++){
 			if (i % 5 == 0 || i % 3 == 0){
 				total += i;
 			}
 		}
-		long time = t.stop();
+		long time = Timer.stop();
 		System.out.println("The solution is: " +  total);
 		System.out.println("Took " + time + "ms.");
 	}

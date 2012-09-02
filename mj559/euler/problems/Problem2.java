@@ -14,11 +14,9 @@ import mj559.euler.util.Timer;
 
 public class Problem2 implements Problem {
 
-	Timer t = new Timer();
-	
 	@Override
 	public void solve() {
-		t.start();
+		Timer.start();
 		int n = 1, m = 1;
 		long result = 0;
 		
@@ -32,7 +30,7 @@ public class Problem2 implements Problem {
 			n = m; m = tmp;
 
 		}
-		long time = t.stop();
+		long time = Timer.stop();
 		
 		System.out.println("The solution is: " +  result);
 		System.out.println("Took " + time + "ms.");
