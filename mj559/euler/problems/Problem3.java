@@ -13,6 +13,7 @@ public class Problem3 implements Problem {
 	 */
 	
 	// Perform sieve of eratosthenes
+	// Returns boolean array. Array[i] = true <=> i is prime (except i=0, i=1)
 	public static boolean[] primeSieve(int n){
 		
 		boolean[] values = new boolean[(int) n];
